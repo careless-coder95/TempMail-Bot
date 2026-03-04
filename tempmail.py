@@ -49,20 +49,41 @@ HEADERS = {
 @bot.on_message(filters.command('start'))
 async def start(client, message):
 
-    text = f"""
-**👋 Welcome to Smart Temp Mail Bot**
+    text = """
+<b>👋 ʜᴇʟʟᴏ  !</b>
+<b>❍ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ˹ᴛᴇᴍᴘ ᴍᴀɪʟ ꭙ ʙᴏᴛ˼ . 🥳</b>
+<b>✦━━━━━━━━━━━━━━━━━━━━━✦</b>
+<b>🛠 ᴛʜɪs ʙᴏᴛ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ:</b>
+<b>➜ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇᴍᴘᴏʀᴀʀʏ ᴇᴍᴀɪʟ</b>
+<b>➜ ʀᴇᴄᴇɪᴠᴇ ᴇᴍᴀɪʟs</b>
+<b>➜ ʀᴇᴀᴅ ɪɴʙᴏx ᴍᴇssᴀɢᴇs</b>
+<b>➜ ᴍᴀɴᴜᴀʟʟʏ ᴄʜᴇᴄᴋ ᴜsɪɴɢ ᴛᴏᴋᴇɴ</b>
+<b>➜ ɢᴇɴᴇʀᴀᴛᴇ ʏᴏᴜʀ ᴛᴇᴍᴘ ᴍᴀɪʟ ᴛᴏ ᴏᴡɴ ᴘᴀssᴡᴏʀᴅ</b>
 
-Click buttons below to continue.
+<b>⚠️ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴛᴏᴋᴇɴ sᴀғᴇ 🔐</b>
+<b>✦━━━━━━━━━━━━━━━━━━━━━✦</b>
+<b>➤ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/CarelessxOwner">˹ᴍɪsᴛᴇʀ ꭙ sᴛᴀʀᴋ˼</a></b>
+<b>➤ ᴍᴏʀᴇ ʙᴏᴛs : <a href="https://t.me/StarkxNetwrk">˹sᴛᴀʀᴋ ꭙ ɴᴇᴛᴡᴏʀᴋ˼</a></b>
+<b>➤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href="https://t.me/ll_CarelessxCoder_ll">˹ᴄᴀʀᴇʟᴇss ꭙ ᴄᴏᴅᴇʀ˼</a></b>
+<b>╰─━━━  ✦ ❀ ✦ ❖ ✦ ❀ ✦   ━━━─</b>
 """
 
     keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("⌯ ɢᴇɴᴇʀᴀᴛᴇ ᴇᴍᴀɪʟ ⌯", callback_data="commands_menu")],
+        [InlineKeyboardButton("˹❍ᴡηєʀ˼", url="https://t.me/CarelessxOwner")],
         [
-            InlineKeyboardButton("📖 Help", callback_data="help_menu"),
-            InlineKeyboardButton("⚙️ Commands", callback_data="commands_menu")
+            InlineKeyboardButton("˹sᴜᴘᴘσʀᴛ˼", url="https://t.me/StarkxNetwrk"),
+            InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/StarkxNetwrk")
         ]
     ])
 
-    await message.reply(text, reply_markup=keyboard)
+    await message.reply_photo(
+        photo="https://files.catbox.moe/dgelfj.jpg",
+        caption=text,
+        reply_markup=keyboard,
+        has_spoiler=True,
+        parse_mode=ParseMode.HTML
+    )
 
 
 @bot.on_callback_query(filters.regex("^help_menu"))
