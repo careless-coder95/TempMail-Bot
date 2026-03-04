@@ -113,13 +113,15 @@ Keep your token safe 🔐
 async def commands_menu(client, callback_query):
 
     commands_text = f"""
-**⚙️ Available Commands**
+    ❍ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛᴇᴍᴘᴏʀᴀʀʏ ᴇᴍᴀɪʟ ᴀᴅᴅʀᴇssᴇs:
 
-➢ `/tmail` - Generate random mail
-➢ `/tmail username:password` - Custom mail create
-➢ `/cmail token` - Check inbox manually
+➤ /tmail - Gᴇɴᴇʀᴀᴛᴇ ᴀ ʀᴀɴᴅᴏᴍ ᴍᴀɪʟ ᴡɪᴛʜ ᴀ ᴘᴀssᴡᴏʀᴅ.
+➤ /tmail [username]:[pass] - 
+Gᴇɴᴇʀᴀᴛᴇ ᴀ sᴘᴇᴄɪғɪᴄ ᴍᴀɪʟ ᴡɪᴛʜ ᴀ ᴘᴀssᴡᴏʀᴅ.
+➤ /cmail [mail token] - cʜᴇᴄᴋ ᴛʜᴇ 10 ᴍᴏsᴛ ʀᴇᴄᴇɴᴛ ᴍᴀɪʟs ᴜsɪɴɢ ʏᴏᴜʀ ᴍᴀɪʟ ᴛᴏᴋᴇɴ.
 
-Use bot in private chat only ⚠️
+✨ Nᴏᴛᴇ: wʜᴇɴ ʏᴏᴜ ɢᴇɴᴇʀᴀᴛᴇ ᴀ ᴍᴀɪʟ ᴀɴᴅ ᴘᴀssᴡᴏʀᴅ, ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ᴍᴀɪʟ ᴛᴏᴋᴇɴ. Tʜɪs ᴛᴏᴋᴇɴ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ 10 ᴍᴏsᴛ ʀᴇᴄᴇɴᴛ ᴇᴍᴀɪʟs ʀᴇᴄᴇɪᴠᴇᴅ ʙʏ ʏᴏᴜʀ ᴛᴇᴍᴘᴏʀᴀʀʏ ᴍᴀɪʟ ᴀᴅᴅʀᴇss. Eᴀᴄʜ ᴇᴍᴀɪʟ ʜᴀs ᴀ ᴅɪғғᴇʀᴇɴᴛ ᴛᴏᴋᴇɴ, sᴏ ᴘʟᴇᴀsᴇ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴛᴏᴋᴇɴs ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ sᴇᴄᴜʀᴇ. 🛡️
+
 """
 
     keyboard = InlineKeyboardMarkup([
@@ -132,20 +134,41 @@ Use bot in private chat only ⚠️
 @bot.on_callback_query(filters.regex("^back_start"))
 async def back_start(client, callback_query):
 
-    text = f"""
-**👋 Welcome to Smart Temp Mail Bot**
+    text = """
+<b>👋 ʜᴇʟʟᴏ  !</b>
+<b>❍ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ˹ᴛᴇᴍᴘ ᴍᴀɪʟ ꭙ ʙᴏᴛ˼ . 🥳</b>
+<b>✦━━━━━━━━━━━━━━━━━━━━━✦</b>
+<b>🛠 ᴛʜɪs ʙᴏᴛ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ:</b>
+<b>➜ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇᴍᴘᴏʀᴀʀʏ ᴇᴍᴀɪʟ</b>
+<b>➜ ʀᴇᴄᴇɪᴠᴇ ᴇᴍᴀɪʟs</b>
+<b>➜ ʀᴇᴀᴅ ɪɴʙᴏx ᴍᴇssᴀɢᴇs</b>
+<b>➜ ᴍᴀɴᴜᴀʟʟʏ ᴄʜᴇᴄᴋ ᴜsɪɴɢ ᴛᴏᴋᴇɴ</b>
+<b>➜ ɢᴇɴᴇʀᴀᴛᴇ ʏᴏᴜʀ ᴛᴇᴍᴘ ᴍᴀɪʟ ᴛᴏ ᴏᴡɴ ᴘᴀssᴡᴏʀᴅ</b>
 
-Click buttons below to continue.
+<b>⚠️ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴛᴏᴋᴇɴ sᴀғᴇ 🔐</b>
+<b>✦━━━━━━━━━━━━━━━━━━━━━✦</b>
+<b>➤ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/CarelessxOwner">˹ᴍɪsᴛᴇʀ ꭙ sᴛᴀʀᴋ˼</a></b>
+<b>➤ ᴍᴏʀᴇ ʙᴏᴛs : <a href="https://t.me/StarkxNetwrk">˹sᴛᴀʀᴋ ꭙ ɴᴇᴛᴡᴏʀᴋ˼</a></b>
+<b>➤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href="https://t.me/ll_CarelessxCoder_ll">˹ᴄᴀʀᴇʟᴇss ꭙ ᴄᴏᴅᴇʀ˼</a></b>
+<b>╰─━━━  ✦ ❀ ✦ ❖ ✦ ❀ ✦   ━━━─</b>
 """
 
     keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("⌯ ɢᴇɴᴇʀᴀᴛᴇ ᴇᴍᴀɪʟ ⌯", callback_data="commands_menu")],
+        [InlineKeyboardButton("˹❍ᴡηєʀ˼", url="https://t.me/CarelessxOwner")],
         [
-            InlineKeyboardButton("📖 Help", callback_data="help_menu"),
-            InlineKeyboardButton("⚙️ Commands", callback_data="commands_menu")
+            InlineKeyboardButton("˹sᴜᴘᴘσʀᴛ˼", url="https://t.me/StarkxNetwrk"),
+            InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/StarkxNetwrk")
         ]
     ])
 
-    await callback_query.message.edit_text(text, reply_markup=keyboard)
+    await message.reply_photo(
+        photo="https://files.catbox.moe/dgelfj.jpg",
+        caption=text,
+        reply_markup=keyboard,
+        has_spoiler=True,
+        parse_mode=ParseMode.HTML
+    )
 
 
 # ================= REST OF YOUR ORIGINAL CODE ================= #
