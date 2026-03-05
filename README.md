@@ -1,18 +1,3 @@
-<h1 align="center">TempMail Telegram Bot 💌</h1>
-
-<p align="center">
-  <a href="https://github.com/bisnuray/TempMail-Bot/stargazers"><img src="https://img.shields.io/github/stars/bisnuray/TempMail-Bot?color=blue&style=flat" alt="GitHub Repo stars"></a>
-  <a href="https://github.com/bisnuray/TempMail-Bot/issues"><img src="https://img.shields.io/github/issues/bisnuray/TempMail-Bot" alt="GitHub issues"></a>
-  <a href="https://github.com/bisnuray/TempMail-Bot/pulls"><img src="https://img.shields.io/github/issues-pr/bisnuray/TempMail-Bot" alt="GitHub pull requests"></a>
-  <a href="https://github.com/bisnuray/TempMail-Bot/graphs/contributors"><img src="https://img.shields.io/github/contributors/bisnuray/TempMail-Bot?style=flat" alt="GitHub contributors"></a>
-  <a href="https://github.com/bisnuray/TempMail-Bot/network/members"><img src="https://img.shields.io/github/forks/bisnuray/TempMail-Bot?style=flat" alt="GitHub forks"></a>
-</p>
-
-<p align="center">
-  <em>TempMail: An advanced Telegram bot script for generating temporary email addresses and checking received messages.</em>
-</p>
-<hr>
-
 ## Features
 
 - Generate temporary email addresses.
@@ -67,7 +52,7 @@ python tempmail.py
 
 ## Author
 
-- Name: Bisnu Ray
-- Telegram: [@itsSmartDev](https://t.me/itsSmartDev)
+- Name: Mister Srark
+- Telegram: [@carelessxowner](https://t.me/carelessxowner)
 
 Feel free to reach out if you have any questions or feedback.
