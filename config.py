@@ -1,5 +1,4 @@
-# Copyright (C) @TheSmartBisnu
-# Channel: https://t.me/itsSmartDev
+
 
 # Pyrogram setup
 API_ID = "12345678"  # Replace this API ID with your actual API ID
