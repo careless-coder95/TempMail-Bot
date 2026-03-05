@@ -1,5 +1,5 @@
-# Author (C) @theSmartBisnu
-# Channel : https://t.me/itsSmartDev
+# Author: Starkiee 
+# owner of Careless coder
 
 import re
 import time
